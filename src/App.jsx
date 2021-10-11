@@ -1,9 +1,9 @@
 import React from 'react';
-import InvoiceFormProvider from './InvoiceFormProvider';
+import InvoiceFormProvider from './contexts/InvoiceFormProvider';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import InvoiceScreen from './InvoiceScreen';
-import InvoiceItemFormScreen from './InvoiceItemFormScreen';
+import InvoiceScreen from './screens/InvoiceScreen';
+import InvoiceItemFormScreen from './screens/InvoiceItemFormScreen';
 
 const { Navigator, Screen } = createNativeStackNavigator();
 

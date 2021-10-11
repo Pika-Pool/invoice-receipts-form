@@ -1,4 +1,4 @@
-import { useNavigation } from '@react-navigation/core';
+import { useIsFocused, useNavigation } from '@react-navigation/core';
 import React from 'react';
 import { Controller, useWatch } from 'react-hook-form';
 import {
@@ -15,10 +15,11 @@ import InputElement, {
 	styles as InputElementStyles,
 } from '../components/InputElement';
 import { contactNumValidationPattern } from '../contants/validationPatterns';
-import { useInvoiceForm } from '../context/InvoiceFormProvider';
+import { useInvoiceForm } from '../contexts/InvoiceFormProvider';
 
 export default function InvoiceScreen() {
-	const { navigate, isFocused } = useNavigation();
+	const { navigate } = useNavigation();
+	const isFocused = useIsFocused();
 
 	const { control, handleSubmit, appendItem } = useInvoiceForm();
 	const itemFields = useWatch({ control, name: 'items', disabled: isFocused });

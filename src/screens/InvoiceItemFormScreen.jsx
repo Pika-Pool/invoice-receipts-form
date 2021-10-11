@@ -4,7 +4,7 @@ import { Controller } from 'react-hook-form';
 import { Button, ScrollView } from 'react-native';
 import { rootNavigationScreens } from '../App';
 import InputElement from '../components/InputElement';
-import { useInvoiceForm } from '../components/InvoiceFormProvider';
+import { useInvoiceForm } from '../contexts/InvoiceFormProvider';
 import { numberValidationPattern } from '../contants/validationPatterns';
 import { styles as InvoiceScreenStyles } from './InvoiceScreen';
 
