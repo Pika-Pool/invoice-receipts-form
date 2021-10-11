@@ -1,0 +1,35 @@
+{
+	"name": "invoice_js",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"android": "react-native run-android",
+		"ios": "react-native run-ios",
+		"start": "react-native start",
+		"lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+		"lint:fix": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
+		"format": "prettier --check \"**/*.{d.ts,jsx,js,ts,tsx}\"",
+		"format:fix": "prettier --write \"**/*.{d.ts,jsx,js,ts,tsx}\""
+	},
+	"dependencies": {
+		"@react-navigation/native": "^6.0.5",
+		"@react-navigation/native-stack": "^6.2.3",
+		"nanoid": "^3.1.29",
+		"react": "17.0.2",
+		"react-hook-form": "^7.17.1",
+		"react-native": "0.66.0",
+		"react-native-date-picker": "^4.1.0",
+		"react-native-safe-area-context": "^3.3.2",
+		"react-native-screens": "^3.8.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.15.8",
+		"@babel/eslint-parser": "^7.15.8",
+		"@babel/runtime": "^7.15.4",
+		"@react-native-community/eslint-config": "^3.0.1",
+		"eslint": "^7.32.0",
+		"eslint-config-prettier": "^8.3.0",
+		"metro-react-native-babel-preset": "^0.66.2",
+		"prettier": "^2.4.1"
+	}
+}

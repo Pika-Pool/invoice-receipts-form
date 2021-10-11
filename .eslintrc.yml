@@ -1,0 +1,12 @@
+root: true
+extends:
+  - "@react-native-community"
+  - eslint:recommended
+  - prettier
+settings:
+  react:
+    version: detect
+parser: "@babel/eslint-parser"
+rules:
+  # "no-unused-vars": "off"
+  "no-void": "off"
