@@ -2,15 +2,11 @@ import { useNavigation } from '@react-navigation/core';
 import React, { useEffect } from 'react';
 import { Controller } from 'react-hook-form';
 import { Button, ScrollView } from 'react-native';
-import { rootNavigationScreens } from './App';
-import InputElement from './InputElement';
-import { useInvoiceForm } from './InvoiceFormProvider';
+import { rootNavigationScreens } from '../App';
+import InputElement from '../components/InputElement';
+import { useInvoiceForm } from '../components/InvoiceFormProvider';
+import { numberValidationPattern } from '../contants/validationPatterns';
 import { styles as InvoiceScreenStyles } from './InvoiceScreen';
-
-const numberValidationPattern = {
-	value: /^[0-9]*$/,
-	message: 'Must be a number',
-};
 
 export default function InvoiceItemFormScreen() {
 	const { cancelCurrentItem, control, currentItemIndex, trigger } =

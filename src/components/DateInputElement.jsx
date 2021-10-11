@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, TouchableHighlight, View } from 'react-native';
 import DatePicker from 'react-native-date-picker';
-import { getDateTimeString } from './utils';
+import { getDateTimeString } from '../utils';
 import { styles as InputElementStyles } from './InputElement';
 
 const DateInputElement = React.forwardRef(

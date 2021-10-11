@@ -9,15 +9,13 @@ import {
 	Text,
 	View,
 } from 'react-native';
-import { rootNavigationScreens } from './App';
-import DateInputElement from './DateInputElement';
-import InputElement, { styles as InputElementStyles } from './InputElement';
-import { useInvoiceForm } from './InvoiceFormProvider';
-
-const contactNumValidationPattern = {
-	value: /^[0-9]*$/,
-	message: 'Should only contain numbers',
-};
+import { rootNavigationScreens } from '../App';
+import DateInputElement from '../components/DateInputElement';
+import InputElement, {
+	styles as InputElementStyles,
+} from '../components/InputElement';
+import { contactNumValidationPattern } from '../contants/validationPatterns';
+import { useInvoiceForm } from '../context/InvoiceFormProvider';
 
 export default function InvoiceScreen() {
 	const { navigate, isFocused } = useNavigation();
