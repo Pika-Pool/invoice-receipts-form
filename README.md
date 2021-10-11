@@ -2,12 +2,15 @@
 
 ## Features:
 
-    - [x] Form with validations
-    - [x] Add Item screen
-    		- add an item on a seperate screen
-    		- integrate with existing form validations
-    - [ ] Show result as table
-    - [ ] Let user print the receipt
+- [x] Form with validations
+- [x] Add Item screen
+  - add an item on a seperate screen
+  - integrate with existing form validations
+- [ ] Show result as table
+- [ ] Let user print the receipt
+
+> You can follow the project at https://github.com/Pika-Pool/invoice-receipts-form
+> for further updates
 
 ## Tested on
 
